@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Home</title>
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
         <style>
             body {
                 background-color: #f0f0f0;
@@ -26,7 +26,7 @@
             }
             #container{
                 width: 80%;
-                margin: auto;
+                margin: 40px auto 0px auto;
             }
             #all-courses{
                 display: flex;
@@ -201,7 +201,21 @@
                 </div>
 
             </div>
-
+            <hr>
+            <!-- <div>{{programming_courses}}</div> -->
+            <div>{% for courses in programming_courses %}
+                    <div style="margin-bottom: 20px">
+                        <h4><b>{{courses["name"]}}</b></h4>
+                        <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between">
+                            <div><b>Description: </b>{{courses["description"]}}</div>
+                            <div><a href="#" style="text-decoration: none;"><button type="button" style="padding: 5px 20px; border-radius: 5px; border: none; background-color: darkred; color: white">Enroll</button></a></div>
+                        </div>
+                        <div style="border-bottom: 1px solid grey; padding-bottom:10px; margin-bottom: 20px">
+                            <b>Price: </b>{{courses["price"]}}
+                        </div>
+                    </div>
+                {% endfor %}<br><br>
+            </div>
             <footer>
                 <p>&copy; 2023 SMI ICT. All rights reserved.</p>
             </footer>

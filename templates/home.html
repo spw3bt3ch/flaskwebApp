@@ -1,0 +1,211 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+
+        <style>
+            body {
+                background-color: #f0f0f0;
+                font-family: Roboto, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            h1{
+                font-size: 40px;
+                text-align: center;
+                color: darkblue;
+            }
+            h2{
+                font-size: 25px;
+                text-align: center;
+                color: darkblue
+            }
+            p{
+                line-height: 1.5;
+                text-align: justify;
+            }
+            #container{
+                width: 80%;
+                margin: auto;
+            }
+            #all-courses{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                flex-direction: row;
+                width: 100%;
+                margin: 40px auto;
+            }
+            
+            #all-courses .courses{
+                width: 250px;
+                height: 200px;
+                flex-wrap: nowrap;
+                margin: 15px auto;
+                border-radius: 10px;
+                background-color: grey-light;;
+            }
+            .courses{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .course-content img{
+                width: 100%;
+                height: auto;
+                border-radius: 10px 10px 0px 0px;
+                margin: 0px auto;
+            }
+            .course-name{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0px auto;
+            }
+            .course-name h3{
+                font-size: 20px;
+                color: darkred;
+                margin: 5px;
+            }
+            .course-name a{
+                text-decoration: none;
+                color: darkred;
+                font-weight: bold;
+                border: 2px solid darkred;
+                background-color: white;
+                padding: 10px 100px;
+                border-radius: 5px;
+                margin: 10px 0px 20px 0px;
+            }
+            .course-name a:hover{
+                background-color: darkred;
+                color: white
+            }
+            #all-c{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                border-radius: 10px;
+                margin: 40px 0px;
+                padding: 20px 0px;
+                box-shadow: 0px 0px 10px darkgray;
+            }
+            footer{
+                width: 100%;
+                height: 50px;
+                padding: 5px 0px;
+                background-color: darkgray;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                color: white;
+            }
+            footer p{
+                text-align: center;
+                font-size: 12px;
+            }
+            #course-section-name{
+                margin: 50px 0px 0px 0px;
+            }
+            hr{
+                width: 100%;
+                height: 1px;
+                background-color: darkgray;
+                border: none;
+                margin: 50px 0px;
+            }
+            
+        </style>
+    </head>  
+    <body>
+        <div id="container">
+            <h1>SMI INSTITUTE OF TECHNOLOGY</h1>
+            <img src="static/banner.jpg" alt="Banner Image" width="100%">
+            <h2>ABOUT SMI ICT</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+            </p>
+            <hr>
+            <h2 id="course-section-name">SMI ICT COURSES</h2>
+            <div id="all-c">
+                <!-- <hr> -->
+                <div id="all-courses">
+                    <div class="courses">
+                        <div class="course-content">
+                            <img src="static/image1.jpg" alt="Course Image">
+                        </div>
+                        <div class="course-name">
+                            <h3>Frontend Development</h3>
+                            <a href="#">Enroll</a>
+                        </div>
+                    </div>
+
+                    <div class="courses">
+                        <div class="course-content">
+                            <img src="static/image4.jpg" alt="Course Image">
+                        </div>
+                        <div class="course-name">
+                            <h3>Backend Development</h3>
+                            <a href="#">Enroll</a>
+                        </div>
+                    </div>
+
+                    <div class="courses">
+                        <div class="course-content">
+                            <img src="static/image3.jpg" alt="Course Image">
+                        </div>
+                        <div class="course-name">
+                            <h3>Data Analysis</h3>
+                            <a href="#">Enroll</a>
+                        </div>
+                    </div>    
+                </div>
+                
+                <!-- <hr> -->
+
+                <div id="all-courses">
+                    <div class="courses">
+                        <div class="course-content">
+                            <img src="static/image1.jpg" alt="Course Image">
+                        </div>
+                        <div class="course-name">
+                            <h3>Frontend Development</h3>
+                            <a href="#">Enroll</a>
+                        </div>
+                    </div>
+
+                    <div class="courses">
+                        <div class="course-content">
+                            <img src="static/image4.jpg" alt="Course Image">
+                        </div>
+                        <div class="course-name">
+                            <h3>Backend Development</h3>
+                            <a href="#">Enroll</a>
+                        </div>
+                    </div>
+
+                    <div class="courses">
+                        <div class="course-content">
+                            <img src="static/image3.jpg" alt="Course Image">
+                        </div>
+                        <div class="course-name">
+                            <h3>Data Analysis</h3>
+                            <a href="#">Enroll</a>
+                        </div>
+                    </div>    
+                </div>
+
+            </div>
+
+            <footer>
+                <p>&copy; 2023 SMI ICT. All rights reserved.</p>
+            </footer>
+    
+        </div>
+    </body>      
+  </html>
